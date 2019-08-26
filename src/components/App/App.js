@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import {HashRouter as Router, Route, Link} from 'react-router-dom';
 import Portfolio from '../Portfolio/Portfolio';
 import Home from '../Home/Home';
@@ -11,15 +12,15 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <ul>
-            <li>
+          <ul class="list-inline">
+            <li class="list-inline-item">
               <Link to="/">Home</Link>
             </li>
-            <li>
-              <Link to="/portfolio">Portfolio</Link>
+            <li class="list-inline-item">
+            <Link to="/portfolio">Portfolio</Link>
             </li>
-            <li>
-              <Link to="/contact">Contact</Link>
+            <li class="list-inline-item">
+            <Link to="/contact">Contact</Link>
             </li>
           </ul>
 
